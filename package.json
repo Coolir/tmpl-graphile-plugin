@@ -34,7 +34,14 @@
     "type": "git",
     "url": "https://github.com/__USERNAME__/__MODULENAME__"
   },
-  "keywords": [],
+  "keywords": [
+    "postgraphile",
+    "graphile",
+    "launchql",
+    "plugin",
+    "postgres",
+    "graphql"
+  ],
   "bugs": {
     "url": "https://github.com/__USERNAME__/__MODULENAME__/issues"
   },
@@ -52,15 +59,19 @@
     "babel-jest": "25.1.0",
     "babel-watch": "^7.0.0",
     "cross-env": "^7.0.2",
+    "envalid": "^6.0.2",
     "eslint": "6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "graphile-test": "^0.1.1",
     "jest": "^24.5.0",
     "jest-in-case": "^1.0.2",
     "prettier": "^2.1.2",
     "regenerator-runtime": "^0.13.7"
   },
   "dependencies": {
-    "@babel/runtime": "^7.11.2"
+    "@babel/runtime": "^7.11.2",
+    "graphile-build": "^4.9.0",
+    "graphile-utils": "^4.9.0"
   }
 }

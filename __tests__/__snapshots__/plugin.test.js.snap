@@ -1,0 +1,360 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`works 1`] = `
+Object {
+  "data": Object {
+    "_meta": Object {
+      "tables": Array [
+        Object {
+          "constraints": Array [
+            Object {
+              "fields": Array [
+                Object {
+                  "name": "perm_id",
+                },
+              ],
+              "refFields": Array [
+                Object {
+                  "name": "id",
+                },
+              ],
+              "refTable": Object {
+                "fields": Array [
+                  Object {
+                    "name": "id",
+                  },
+                  Object {
+                    "name": "name",
+                  },
+                ],
+                "name": "permissions",
+              },
+            },
+            Object {
+              "__typename": "MetaschemaPrimaryKeyConstraint",
+              "fields": Array [
+                Object {
+                  "name": "perm_id",
+                  "type": Object {
+                    "name": "int8",
+                  },
+                },
+                Object {
+                  "name": "role_id",
+                  "type": Object {
+                    "name": "int8",
+                  },
+                },
+              ],
+              "name": "permission_assignment_pkey",
+            },
+            Object {
+              "fields": Array [
+                Object {
+                  "name": "role_id",
+                },
+              ],
+              "refFields": Array [
+                Object {
+                  "name": "id",
+                },
+              ],
+              "refTable": Object {
+                "fields": Array [
+                  Object {
+                    "name": "id",
+                  },
+                  Object {
+                    "name": "org_id",
+                  },
+                ],
+                "name": "roles",
+              },
+            },
+          ],
+          "fields": Array [
+            Object {
+              "name": "perm_id",
+              "type": Object {
+                "name": "int8",
+              },
+            },
+            Object {
+              "name": "role_id",
+              "type": Object {
+                "name": "int8",
+              },
+            },
+          ],
+          "name": "permission_assignment",
+        },
+        Object {
+          "constraints": Array [
+            Object {
+              "__typename": "MetaschemaPrimaryKeyConstraint",
+              "fields": Array [
+                Object {
+                  "name": "id",
+                  "type": Object {
+                    "name": "int4",
+                  },
+                },
+              ],
+              "name": "permissions_pkey",
+            },
+          ],
+          "fields": Array [
+            Object {
+              "name": "id",
+              "type": Object {
+                "name": "int4",
+              },
+            },
+            Object {
+              "name": "name",
+              "type": Object {
+                "name": "citext",
+              },
+            },
+          ],
+          "name": "permissions",
+        },
+        Object {
+          "constraints": Array [
+            Object {
+              "__typename": "MetaschemaPrimaryKeyConstraint",
+              "fields": Array [
+                Object {
+                  "name": "id",
+                  "type": Object {
+                    "name": "int4",
+                  },
+                },
+              ],
+              "name": "roles_pkey",
+            },
+            Object {
+              "fields": Array [
+                Object {
+                  "name": "org_id",
+                },
+              ],
+              "refFields": Array [
+                Object {
+                  "name": "id",
+                },
+              ],
+              "refTable": Object {
+                "fields": Array [
+                  Object {
+                    "name": "id",
+                  },
+                  Object {
+                    "name": "username",
+                  },
+                ],
+                "name": "users",
+              },
+            },
+          ],
+          "fields": Array [
+            Object {
+              "name": "id",
+              "type": Object {
+                "name": "int4",
+              },
+            },
+            Object {
+              "name": "org_id",
+              "type": Object {
+                "name": "int8",
+              },
+            },
+          ],
+          "name": "roles",
+        },
+        Object {
+          "constraints": Array [
+            Object {
+              "fields": Array [
+                Object {
+                  "name": "subj_id",
+                },
+              ],
+              "refFields": Array [
+                Object {
+                  "name": "id",
+                },
+              ],
+              "refTable": Object {
+                "fields": Array [
+                  Object {
+                    "name": "id",
+                  },
+                  Object {
+                    "name": "username",
+                  },
+                ],
+                "name": "users",
+              },
+            },
+            Object {
+              "__typename": "MetaschemaPrimaryKeyConstraint",
+              "fields": Array [
+                Object {
+                  "name": "subj_id",
+                  "type": Object {
+                    "name": "int8",
+                  },
+                },
+                Object {
+                  "name": "role_id",
+                  "type": Object {
+                    "name": "int8",
+                  },
+                },
+              ],
+              "name": "subject_assignment_pkey",
+            },
+            Object {
+              "fields": Array [
+                Object {
+                  "name": "role_id",
+                },
+              ],
+              "refFields": Array [
+                Object {
+                  "name": "id",
+                },
+              ],
+              "refTable": Object {
+                "fields": Array [
+                  Object {
+                    "name": "id",
+                  },
+                  Object {
+                    "name": "org_id",
+                  },
+                ],
+                "name": "roles",
+              },
+            },
+          ],
+          "fields": Array [
+            Object {
+              "name": "subj_id",
+              "type": Object {
+                "name": "int8",
+              },
+            },
+            Object {
+              "name": "role_id",
+              "type": Object {
+                "name": "int8",
+              },
+            },
+          ],
+          "name": "subject_assignment",
+        },
+        Object {
+          "constraints": Array [
+            Object {
+              "__typename": "MetaschemaPrimaryKeyConstraint",
+              "fields": Array [
+                Object {
+                  "name": "user_id",
+                  "type": Object {
+                    "name": "int8",
+                  },
+                },
+              ],
+              "name": "user_settings_pkey",
+            },
+            Object {
+              "fields": Array [
+                Object {
+                  "name": "user_id",
+                },
+              ],
+              "refFields": Array [
+                Object {
+                  "name": "id",
+                },
+              ],
+              "refTable": Object {
+                "fields": Array [
+                  Object {
+                    "name": "id",
+                  },
+                  Object {
+                    "name": "username",
+                  },
+                ],
+                "name": "users",
+              },
+            },
+          ],
+          "fields": Array [
+            Object {
+              "name": "user_id",
+              "type": Object {
+                "name": "int8",
+              },
+            },
+            Object {
+              "name": "setting1",
+              "type": Object {
+                "name": "text",
+              },
+            },
+          ],
+          "name": "user_settings",
+        },
+        Object {
+          "constraints": Array [
+            Object {
+              "__typename": "MetaschemaPrimaryKeyConstraint",
+              "fields": Array [
+                Object {
+                  "name": "id",
+                  "type": Object {
+                    "name": "int4",
+                  },
+                },
+              ],
+              "name": "users_pkey",
+            },
+            Object {
+              "__typename": "MetaschemaUniqueConstraint",
+              "fields": Array [
+                Object {
+                  "name": "username",
+                  "type": Object {
+                    "name": "citext",
+                  },
+                },
+              ],
+              "name": "users_username_key",
+            },
+          ],
+          "fields": Array [
+            Object {
+              "name": "id",
+              "type": Object {
+                "name": "int4",
+              },
+            },
+            Object {
+              "name": "username",
+              "type": Object {
+                "name": "citext",
+              },
+            },
+          ],
+          "name": "users",
+        },
+      ],
+    },
+  },
+}
+`;
